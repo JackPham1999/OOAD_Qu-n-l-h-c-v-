@@ -1,0 +1,6 @@
+1/ Add data vào databases
+ghi sẵn các lệnh query vào file txt
+
+2/Tạo view cho sinh viên
+
+3/Form Login + phân quyền
