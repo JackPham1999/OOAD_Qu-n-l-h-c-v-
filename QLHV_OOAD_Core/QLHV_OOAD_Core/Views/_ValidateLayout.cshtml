@@ -13,40 +13,18 @@
 </head>
 <body>
     <div>
-        <section class="form-26">
-            <div class="form-26-mian">
-                <div class="layer">
-                    <div class="wrapper">
-                        <div class="form-inner-cont">
-                            <div class="forms-26-info">
-                                <h2>Đăng Nhập</h2><br>
-                            </div>
-                            <div class="form-right-inf">
-                                <form action="Login" method="post" class="signin-form">
-                                    <div class="forms-gds">
-                                        <div class="form-input">
-                                            <input type="text" name="" placeholder="Tên Đăng Nhập" required />
-                                        </div>
-                                        <div class="form-input">
-                                            <input type="password" name="" placeholder="Mật Khẩu" required />
-                                        </div>
-                                        <div class="form-input"><button class="btn">Login</button></div>
-                                    </div>
-                                </form>
 
-                            </div>
-                            <div class="copyright text-center">
-                                <p>
-                                    © 2019 Quản Lý Học Vụ - UIT
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
         @RenderBody()
     </div>
+
+    @if (TempData["LoginError"] != null)
+    {
+        <script type="text/javascript">
+            window.onload = function () {
+                alert("Login Error");
+            };
+        </script>
+    }
+
 </body>
 </html>
