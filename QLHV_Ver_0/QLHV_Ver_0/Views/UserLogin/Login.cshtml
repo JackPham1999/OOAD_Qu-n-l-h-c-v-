@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_LayoutUserLogin.cshtml";
+}
+
+<section class="form-26">
+    <div class="form-26-mian">
+        <div class="layer">
+            <div class="wrapper">
+                <div class="form-inner-cont">
+                    <div class="forms-26-info">
+                        <h2>Đăng Nhập</h2>
+                    <div class="form-right-inf">
+                        <form action="Verify" method="post" class="signin-form">
+                            <div class="forms-gds">
+                                <div class="form-input">
+                                    <input type="text" name="Name" placeholder="Tài khoản" required />
+                                </div>
+                                <div class="form-input">
+                                    <input type="password" name="Password" placeholder="Mật Khẩu" required />
+                                </div>
+                                <div class="form-input"><button class="btn">Đăng Nhập</button></div>
+                            </div>
+                            <h6 class="already"> Chưa có tài khoản? <a href="register.html"><span>Đăng Ký<span></span></span></a></h6>
+                        </form>
+
+                    </div>
+                    <div class="copyright text-center">
+                        <p>
+                            © 2019 Quản lý học vụ - UIT
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
