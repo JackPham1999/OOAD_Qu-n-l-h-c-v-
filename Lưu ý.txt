@@ -1,2 +1,0 @@
-Để kết nối vào database thì trong phần Controllers/ValidationController sửa tên Datasource lại
-HocSinh thì có ID là số không vd : 123456 còn giao viên là GV vd: GV1
