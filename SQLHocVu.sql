@@ -5,7 +5,7 @@ create table HocSinh
 (
 	IDHS int NOT NULL,
 	HoTen nvarchar(100) NOT NULL,
-	TenLop nvarchar(20) NOT NULL,
+	TenLop nvarchar(50) NOT NULL,
 	GioiTinh nvarchar(10) check (GioiTinh in ('Nam','Nữ','Khác')),
 	NgaySinh datetime NOT NULL,
 	DanToc nvarchar(10),
@@ -18,8 +18,8 @@ create table HocSinh
 )
 create table Lop
 (
-	IDL nvarchar(20) NOT NULL,
-	GVCN int NOT NULL,
+	IDL nvarchar(50) NOT NULL,
+	GVCN nvarchar(20) NOT NULL,
 	SiSo int,
 	--HocVien int,
 	constraint pk_l primary key(IDL),
@@ -28,9 +28,9 @@ create table Lop
 )
 create table GiaoVien
 (
-	IDGV int NOT NULL ,
+	IDGV nvarchar(20) NOT NULL ,
 	Hoten nvarchar(100) NOT NULL,
-	TenMonHoc nvarchar(20),
+	TenMonHoc nvarchar(50),
 	---LopChuNhiem nvarchar(100),
 	SDT nvarchar(12),
 	constraint pk_gv primary key (IDGV),
@@ -39,13 +39,13 @@ create table GiaoVien
 )
 create table MonHoc
 (
-	IDMH nvarchar(20) NOT NULL ,
+	IDMH nvarchar(50) NOT NULL ,
 	TenMonHoc nvarchar(100),
 	constraint pk_mh primary key(IDMH),
 )
 create table PhuHuynh
 (
-	IDPH int NOT NULL ,
+	IDPH nvarchar(50) NOT NULL ,
 	HoTen nvarchar(100) ,
 	GioiTinh nvarchar(10),
 	NgheNghiep nvarchar(50),
@@ -56,33 +56,34 @@ create table QuanHe
 (
 	TenQuanHe nvarchar(50),
 	IDHS int,
-	IDPH int,
+	IDPH nvarchar(50),
 	constraint fk_qh_hs foreign key (IDHS) references HocSinh(IDHS),
 	constraint fk_qh_ph foreign key (IDPH) references PhuHuynh(IDPH),
 	constraint pk_qh primary key (IDHS,IDPH),
 )
 create table HocKy
 (
-	IDHK nvarchar(20) NOT NULL,
-	TenLop nvarchar(20),
+	IDHK nvarchar(50) NOT NULL,
+	TenLop nvarchar(50),
 	DiemTB float,
 	IDHS int,
-	HanhKiem nvarchar(15),
+	HanhKiem nvarchar(20),
 	SoBuoiNghi int,
-	XepLoai nvarchar(15),
-	LenLop nvarchar check (LenLop in ('True','False')),
+	XepLoai nvarchar(20),
+	LenLop nvarchar(10) check (LenLop in ('True','False')),
 	constraint pk_hk primary key (IDHK),
 	constraint fk_hk_l foreign key (TenLop) references Lop(IDL),
 	constraint fk_hk_hs foreign key (IDHS) references HocSinh(IDHS),
 )
+
 create table KiemTra
 (
 	IDKT nvarchar(20) NOT NULL,
-	TenMonHoc nvarchar(20),
-	HinhThuc nvarchar(10),
+	TenMonHoc nvarchar(50),
+	HinhThuc nvarchar(20),
 	NgayKT datetime,
 	Diem float,
-	IDHK nvarchar(20),
+	IDHK nvarchar(50),
 	constraint pk_kt primary key (IDKT),
 	constraint fk_kt_mh foreign key (TenMonHoc) references MonHoc(IDMH),
 	constraint fk_kt_hk foreign key (IDHK) references HocKy(IDHK),
