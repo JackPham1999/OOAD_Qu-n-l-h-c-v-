@@ -20,15 +20,18 @@ namespace QLHV_OOAD_Core.Controllers
             this.configuration = config;
 
         }
-        public IActionResult StudentView(Users user)
+
+
+        public IActionResult StudentView(Users user, HocSinh hs, List<PhuHuynh> phList)
         {
             if (HttpContext.Session.GetString("SessionUser") == null) return RedirectToAction("ValidateForm", "Validation");
             SqlDataReader dr = null;
             SqlConnection con = new SqlConnection();
             con.ConnectionString = configuration.GetConnectionString("QLHVContext");
 
-            con.Open();
 
+            //Lấy dữ liệu HocSinh
+            con.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
 
@@ -36,16 +39,70 @@ namespace QLHV_OOAD_Core.Controllers
             dr = cmd.ExecuteReader();
             if(dr.Read())
             {
-                user.HoTen = dr["HoTen"].ToString();
-                user.TenLop = dr["TenLop"].ToString();
-                user.DiaChi = dr["DCHT"].ToString();
-                user.SDT = dr["SDT"].ToString();
+                hs.HoTen = dr["HoTen"].ToString();
+                hs.TenLop = dr["TenLop"].ToString();
+                hs.DCHT = dr["DCHT"].ToString();
+                hs.DCTT = dr["DCTT"].ToString();
+                hs.DanToc = dr["DanToc"].ToString();
+                hs.CheDo = dr["CheDo"].ToString();
+                hs.SDT = dr["SDT"].ToString();
+                hs.GioiTinh = dr["GioiTinh"].ToString();
+                hs.NgaySinh = Convert.ToDateTime(dr["NgaySinh"]);
+
             }
 
             con.Close();
 
 
-            ViewData["Student"] = user;
+            //Lấy dữ liệu QuanHe
+            con.Open();
+            cmd.Connection = con;
+            int count = 0;
+            cmd.CommandText = "Select [TenQuanHe],[SDT],[NgheNghiep],[HoTen] " +
+                "from QuanHe Inner Join PhuHuynh on PhuHuynh.IDPH = QuanHe.IDPH " +
+                "where IDHS = '"+user.ID+"'";
+            dr = cmd.ExecuteReader();
+            while (dr.Read() || count != 3)
+            {
+                PhuHuynh ph = new PhuHuynh();
+                try
+                {
+                    if (dr["TenQuanHe"].ToString() == "Mẹ")
+                    {
+                        ph.SDT = dr["SDT"].ToString();
+                        ph.NgheNghiep = dr["NgheNghiep"].ToString();
+                        ph.HoTen = dr["HoTen"].ToString();
+                    }
+
+                    else if (dr["TenQuanHe"].ToString() == "Cha")
+                    {
+                        ph.SDT = dr["SDT"].ToString();
+                        ph.NgheNghiep = dr["NgheNghiep"].ToString();
+                        ph.HoTen = dr["HoTen"].ToString();
+                    }
+
+                    else if (dr["TenQuanHe"].ToString() == "Giám Hộ")
+                    {
+                        ph.SDT = dr["SDT"].ToString();
+                        ph.NgheNghiep = dr["NgheNghiep"].ToString();
+                        ph.HoTen = dr["HoTen"].ToString();
+                    }
+                }
+                catch(Exception e)
+                {
+                    ph.HoTen = null;
+                }
+
+                phList.Add(ph);
+                count++;
+            }
+
+            con.Close();
+
+            //Dựa vào dữ liệu quan hệ lấy ra thông tin phụ huynh
+
+            ViewData["Student"] = hs;
+            ViewData["Parent"] = phList;
             return View();
         }
 

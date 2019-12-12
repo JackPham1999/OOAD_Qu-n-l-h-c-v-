@@ -14,5 +14,6 @@
     <WebStackScaffolding_DbContextDialogWidth>600</WebStackScaffolding_DbContextDialogWidth>
     <WebStackScaffolding_DbContextTypeFullName>QLHV_OOAD_Core.Models.QLHVContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_LayoutPageFile>~/Views/_GeneralLayout.cshtml</WebStackScaffolding_LayoutPageFile>
+    <ShowAllFiles>true</ShowAllFiles>
   </PropertyGroup>
 </Project>

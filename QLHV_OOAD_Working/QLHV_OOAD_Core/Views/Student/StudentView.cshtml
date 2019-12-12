@@ -5,7 +5,8 @@
 }
 
 @{
-    var data = (Users)ViewData["Student"];
+    var data = (HocSinh)ViewData["Student"];
+    List<PhuHuynh> ph = (List<PhuHuynh>)ViewData["Parent"];
 }
 
 
@@ -14,7 +15,6 @@
     <a href="#" class="w3-bar-item w3-button">Link 2</a>
 
 </div>
-@*///>>>>>>> 3fd179bff7ca46520d63971eea6002831da9ed68*@
 
 <div style=" margin-left:15%; padding-top:60px">
     <div style="background-color:white; padding:20px;">
@@ -31,47 +31,47 @@
         </div>
         <div class="row">
             <div class="col-md-2">Ngày sinh:</div>
-            <div class="col-md-4">dasdasda</div>
+            <div class="col-md-4">@data.NgaySinh.Date.ToString("dd/MM/yyyy")</div>
             <div class="col-md-2">Dân tộc:</div>
-            <div class="col-md-4">dadadsddsadsa</div>
+            <div class="col-md-4">@data.DanToc</div>
         </div>
         <div class="row">
             <div class="col-md-2">Số điện thoại:</div>
             <div class="col-md-4">@data.SDT</div>
             <div class="col-md-2">Chế độ:</div>
-            <div class="col-md-4">dsasaddsdasda</div>
+            <div class="col-md-4">@data.CheDo</div>
         </div>
         <div class="row">
             <div class="col-md-2">Địa chỉ thường trú:</div>
-            <div class="col-md-10">dasdsaddadad</div>
+            <div class="col-md-10">@data.DCTT</div>
         </div>
         <div class="row">
             <div class="col-md-2">Địa chỉ hiện tại:</div>
-            <div class="col-md-10">dasdasdasdad</div>
+            <div class="col-md-10">@data.DCHT</div>
         </div>
         <div class="row">
             <div class="col-md-2">Họ tên cha:</div>
-            <div class="col-md-2"></div>
+            <div class="col-md-2">@ph[1].HoTen</div>
             <div class="col-md-1">SĐT:</div>
-            <div class="col-md-3"></div>
+            <div class="col-md-3">@ph[1].SDT</div>
             <div class="col=md-2">Nghề nghiệp:</div>
-            <div class="col-md-2"></div>
+            <div class="col-md-2">@ph[1].NgheNghiep</div>
         </div>
         <div class="row">
             <div class="col-md-2">Họ tên mẹ:</div>
-            <div class="col-md-2"></div>
+            <div class="col-md-2">@ph[0].HoTen</div>
             <div class="col-md-1">SĐT:</div>
-            <div class="col-md-3"></div>
+            <div class="col-md-3">@ph[0].SDT</div>
             <div class="col=md-2">Nghề nghiệp:</div>
-            <div class="col-md-2"></div>
+            <div class="col-md-2">@ph[0].NgheNghiep</div>
         </div>
         <div class="row">
             <div class="col-md-2">Họ tên người giám hộ:</div>
-            <div class="col-md-2"></div>
+            <div class="col-md-2">@ph[2].HoTen</div>
             <div class="col-md-1">SĐT:</div>
-            <div class="col-md-3"></div>
+            <div class="col-md-3">@ph[2].SDT</div>
             <div class="col=md-2">Nghề nghiệp:</div>
-            <div class="col-md-2"></div>
+            <div class="col-md-2">@ph[2].NgheNghiep</div>
         </div>
     </div>
     <hr />
