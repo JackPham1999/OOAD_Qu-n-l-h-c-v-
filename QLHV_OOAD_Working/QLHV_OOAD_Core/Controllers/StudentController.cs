@@ -38,9 +38,9 @@ namespace QLHV_OOAD_Core.Controllers
             if(dr.Read())
             {
                 user.HoTen = dr["HoTen"].ToString();
-                user.TenLop = dr["TenLop"].ToString();
-                user.DiaChi = dr["DCHT"].ToString();
-                user.SDT = dr["SDT"].ToString();
+                //user.TenLop = dr["TenLop"].ToString();
+                //user.DiaChi = dr["DCHT"].ToString();
+                //user.SDT = dr["SDT"].ToString();
             }
 
             con.Close();
