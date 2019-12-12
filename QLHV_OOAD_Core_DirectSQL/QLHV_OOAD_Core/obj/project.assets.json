@@ -12542,11 +12542,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\Homework\\HK5\\Phát triển phần mềm hướng đối tượng\\OOAD\\OOAD_Quan_ly_hoc_vu\\QLHV_OOAD_Core_DirectSQL\\QLHV_OOAD_Core\\QLHV_OOAD_Core.csproj",
       "projectName": "QLHV_OOAD_Core",
       "projectPath": "D:\\Homework\\HK5\\Phát triển phần mềm hướng đối tượng\\OOAD\\OOAD_Quan_ly_hoc_vu\\QLHV_OOAD_Core_DirectSQL\\QLHV_OOAD_Core\\QLHV_OOAD_Core.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
       "outputPath": "D:\\Homework\\HK5\\Phát triển phần mềm hướng đối tượng\\OOAD\\OOAD_Quan_ly_hoc_vu\\QLHV_OOAD_Core_DirectSQL\\QLHV_OOAD_Core\\obj\\",
+=======
+      "projectUniqueName": "E:\\University\\Temp\\QLHV_OOAD_Core_DirectSQL\\QLHV_OOAD_Core\\QLHV_OOAD_Core.csproj",
+      "projectName": "QLHV_OOAD_Core",
+      "projectPath": "E:\\University\\Temp\\QLHV_OOAD_Core_DirectSQL\\QLHV_OOAD_Core\\QLHV_OOAD_Core.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "E:\\University\\Temp\\QLHV_OOAD_Core_DirectSQL\\QLHV_OOAD_Core\\obj\\",
+>>>>>>> 0d6280cd15cc0f850b910990263d2f83f89abf63
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",

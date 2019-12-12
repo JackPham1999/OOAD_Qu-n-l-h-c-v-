@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using QLHV_OOAD_Core.Models;
 
 namespace QLHV_OOAD_Core
@@ -38,8 +39,9 @@ namespace QLHV_OOAD_Core
 
             services.AddSession(options =>
             {
-                options.IdleTimeout = TimeSpan.FromSeconds(3600);
+                options.IdleTimeout = TimeSpan.FromSeconds(10);
             });
+
 
             services.AddDbContext<QLHVContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("QLHVContext")));

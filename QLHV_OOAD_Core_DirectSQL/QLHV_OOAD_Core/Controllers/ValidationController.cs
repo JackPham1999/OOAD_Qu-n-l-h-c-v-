@@ -19,6 +19,7 @@ namespace QLHV_OOAD_Core.Controllers
         
         private readonly IConfiguration configuration;
         public const string GV_Char = "GV";
+        public static Users userData = new Users();
 
         [NonAction]
         public bool checkID(string id)
@@ -35,19 +36,24 @@ namespace QLHV_OOAD_Core.Controllers
         }
         public IActionResult ValidateForm()
         {
+            if ((string)HttpContext.Session.GetString("SessionUser") != null)
+            {
+                var session = this.HttpContext.Session.GetString("SessionUser");
+                HttpContext.Session.SetString("SessionUser", JsonConvert.SerializeObject(userData));
+                return RedirectToAction("StudentView", "Student",userData);
+            }
             return View();
         }
 
 
         public IActionResult Login(Users user)
         {
-            if ((string)HttpContext.Session.GetString("SessionUser") != null) return Content("User still logged in");
+            
                 
             if (user.HoTen == null || user.ID == null) return RedirectToAction("ValidateForm");
-            //string connectionString = configuration.GetConnectionString("DefaultConnectionString");
             SqlDataReader dr;
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=NGUYEN-NGUYEN;Initial Catalog=HocVu;Integrated Security=True";
+            con.ConnectionString = configuration.GetConnectionString("QLHVContext");
 
             con.Open();
 
@@ -60,10 +66,11 @@ namespace QLHV_OOAD_Core.Controllers
                 dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
+                    userData.ID = user.ID;
+                    userData.HoTen = user.HoTen;
+                    var session = this.HttpContext.Session.GetString("SessionUser");
                     HttpContext.Session.SetString("SessionUser", JsonConvert.SerializeObject(user));
-                    return RedirectToAction("StudentView","Student", user);
-                    //return RedirectToAction("Test", user);
-                    //return Content(user.HoTen + " Hoc Snh");
+                    return RedirectToAction("StudentView","Student", user, session);
                     //return Content(HttpContext.Session.GetString("SessionUser"));
                 }
 
@@ -82,19 +89,11 @@ namespace QLHV_OOAD_Core.Controllers
                 }
             }
             con.Close();
-            return RedirectToAction("ValidateForm");
+            TempData["LoginError"] = "Error";
+            return RedirectToAction("ValidateForm", TempData["LoginError"]);
         }
 
-
-        public IActionResult Test(Users user)
-        {
-            if (user.ID == "17520334") return Content("Pass User Success");
-            if (HttpContext.Session.GetString("SessionUser") != null) return Content("A");
-            return Content("B");
-        }
     }
-
-
 
 }
 
