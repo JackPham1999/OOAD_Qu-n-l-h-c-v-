@@ -22,7 +22,6 @@ namespace QLHV_OOAD_Core.Controllers
         }
         public IActionResult StudentView(Users user)
         {
-            return View("Test");
             if (HttpContext.Session.GetString("SessionUser") == null) return RedirectToAction("ValidateForm", "Validation");
             SqlDataReader dr = null;
             SqlConnection con = new SqlConnection();

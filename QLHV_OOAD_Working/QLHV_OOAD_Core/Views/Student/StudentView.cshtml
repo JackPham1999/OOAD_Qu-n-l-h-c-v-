@@ -1,47 +1,79 @@
 ﻿
 @{
     ViewData["Title"] = "StudentView";
-    Layout = "~/Views/_InfoLayout.cshtml";
+    //Layout = "~/Views/_InfoLayout.cshtml";
 }
 
-@{ 
+@{
     var data = (Users)ViewData["Student"];
 }
 
-<div class="agileits-wrap">
-    <h1>Thông Tin</h1>
-    <div class="content">
-        <p>Thông tin của học sinh</p>
-        <form action="#" medthod="post">
-            <div class="examples">
-                @*<select name="country">
-                    <option value="none" selected="" disabled="">Title</option>
-                    <option value="Tittle">Title-1</option>
-                    <option value="Tittle">Title-2</option>
-                    <option value="Tittle">Title-3</option>
-                    <option value="Tittle">Title-4</option>
-                    <option value="Tittle">Title-5</option>
-                </select>*@
-                <div class="w3l-left-grid">
-                    <label>Họ Tên</label>
-                    <input type="text" name="name" required="" value= "@data.HoTen"  disabled/>
-                    @*<label>Địa chỉ</label>
-                    <input type="text" name="email" required="" value= "@data.DiaChi" disabled/>*@
-                </div>
-                <div class="w3l-left-grid w3-ls">
 
-                    @*<label>Lớp</label>
-                    <input type="text" name="phone" required="" value= "@data.TenLop" disabled/>
-                    <label>Số ĐIện Thoại</label>
-                    <input type="text" name="inquiry" required="" value= "@data.SDT"  disabled/>*@
+<div class="sidenav" style="padding-top:60px">
+    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+@*///>>>>>>> 3fd179bff7ca46520d63971eea6002831da9ed68*@
 
-                </div>
-                <div class="clear"> </div>
-            </div>
-        </form>
+<div style=" margin-left:15%; padding-top:60px">
+    <div style="background-color:white; padding:20px;">
+        <p style="line-height: 1.8"/>
+        <h2 style="text-align:center">Thông tin học sinh</h2>
+        <br />
+        <div class="row">
+            <div class="col-md-2">Họ tên:</div>
+            <div class="col-md-2">@data.HoTen</div>
+            <div class="col-md-2">Lớp:</div>
+            <div class="col-md-2">dsadasd</div>
+            <div class="col-md-2">Giới tính:</div>
+            <div class="col-md-2">dadssdasd</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Ngày sinh:</div>
+            <div class="col-md-4">dasdasda</div>
+            <div class="col-md-2">Dân tộc:</div>
+            <div class="col-md-4">dadadsddsadsa</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Số điện thoại:</div>
+            <div class="col-md-4">dadadsadsa</div>
+            <div class="col-md-2">Chế độ:</div>
+            <div class="col-md-4">dsasaddsdasda</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Địa chỉ thường trú:</div>
+            <div class="col-md-10">dasdsaddadad</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Địa chỉ hiện tại:</div>
+            <div class="col-md-10">dasdasdasdad</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Họ tên cha:</div>
+            <div class="col-md-2"></div>
+            <div class="col-md-1">SĐT:</div>
+            <div class="col-md-3"></div>
+            <div class="col=md-2">Nghề nghiệp:</div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Họ tên mẹ:</div>
+            <div class="col-md-2"></div>
+            <div class="col-md-1">SĐT:</div>
+            <div class="col-md-3"></div>
+            <div class="col=md-2">Nghề nghiệp:</div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Họ tên người giám hộ:</div>
+            <div class="col-md-2"></div>
+            <div class="col-md-1">SĐT:</div>
+            <div class="col-md-3"></div>
+            <div class="col=md-2">Nghề nghiệp:</div>
+            <div class="col-md-2"></div>
+        </div>
     </div>
-    <div class="wthree-footer">
-        <p>© 2019 QLHV - UIT</p>
-    </div>
+    <hr />
 </div>
 
