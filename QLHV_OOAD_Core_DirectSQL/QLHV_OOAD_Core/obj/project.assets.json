@@ -12543,11 +12543,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\University\\Temp\\QLHV_OOAD_Core\\QLHV_OOAD_Core\\QLHV_OOAD_Core.csproj",
+      "projectUniqueName": "E:\\University\\Temp\\QLHV_OOAD_Core_DirectSQL\\QLHV_OOAD_Core\\QLHV_OOAD_Core.csproj",
       "projectName": "QLHV_OOAD_Core",
-      "projectPath": "E:\\University\\Temp\\QLHV_OOAD_Core\\QLHV_OOAD_Core\\QLHV_OOAD_Core.csproj",
+      "projectPath": "E:\\University\\Temp\\QLHV_OOAD_Core_DirectSQL\\QLHV_OOAD_Core\\QLHV_OOAD_Core.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\University\\Temp\\QLHV_OOAD_Core\\QLHV_OOAD_Core\\obj\\",
+      "outputPath": "E:\\University\\Temp\\QLHV_OOAD_Core_DirectSQL\\QLHV_OOAD_Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
