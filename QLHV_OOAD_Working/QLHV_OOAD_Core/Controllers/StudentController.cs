@@ -22,7 +22,6 @@ namespace QLHV_OOAD_Core.Controllers
         }
         public IActionResult StudentView(Users user)
         {
-            return View("Test");
             if (HttpContext.Session.GetString("SessionUser") == null) return RedirectToAction("ValidateForm", "Validation");
             SqlDataReader dr = null;
             SqlConnection con = new SqlConnection();
@@ -38,9 +37,9 @@ namespace QLHV_OOAD_Core.Controllers
             if(dr.Read())
             {
                 user.HoTen = dr["HoTen"].ToString();
-                user.TenLop = dr["TenLop"].ToString();
-                user.DiaChi = dr["DCHT"].ToString();
-                user.SDT = dr["SDT"].ToString();
+                //user.TenLop = dr["TenLop"].ToString();
+                //user.DiaChi = dr["DCHT"].ToString();
+                //user.SDT = dr["SDT"].ToString();
             }
 
             con.Close();
