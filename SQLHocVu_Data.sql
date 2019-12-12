@@ -1,4 +1,5 @@
-﻿insert into MonHoc(IDMH,TenMonHoc)
+﻿use HocVu
+insert into MonHoc(IDMH,TenMonHoc)
 	values ('IT001','Mac-Lenin')
 insert into MonHoc(IDMH,TenMonHoc)
 	values (N'IT002',N'Tư tưởng HCM')
