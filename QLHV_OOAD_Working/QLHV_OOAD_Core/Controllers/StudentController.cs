@@ -121,7 +121,7 @@ namespace QLHV_OOAD_Core.Controllers
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
 
-            cmd.CommandText = "Select *from HocSinh where IDHS = '" + user.ID + "'";
+            cmd.CommandText = "Select *from HocKy where IDHS = '" + user.ID + "'";
             dr = cmd.ExecuteReader();
 
             return View();

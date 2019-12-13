@@ -5,8 +5,32 @@
 }
 
 @{
-    var data = (HocKy)ViewData["Student"];
+    var hocky = (HocKy)ViewData["Student"]; 
 }
+<script language="javascirpt" type="text/javascript">
+    function GetTb(_stateId) {
+        var procemessage = "<option value='0'> Please wait...</option>";
+        $("#select-dist-1").html(procemessage).show();
+        var url = "@Url.Action("GetDistById")";
+
+        $.ajax({
+            url: url,
+            data: { id: _stateId },
+            cache: false,
+            type: "POST",
+            success: function (data) {
+                var markup = "<option>Chọn quận/huyện</option>";
+                for (var x = 0; x < data.length; x++) {
+                    markup += "<option value=" + data[x].value + ">" + data[x].text + "</option>";
+                }
+                $("#select-dist-1").html(markup).show();
+            },
+            error: function (reponse) {
+                alert("error : " + reponse);
+            }
+        });
+    }
+</script>
 <div class="sidenav" style="padding-top:60px">
     <a asp-action="Semester" class="w3-bar-item w3-button">Xem điểm</a>
     <a href="#" class="w3-bar-item w3-button">Link 2</a>
@@ -18,19 +42,24 @@
         <p style="line-height: 1.8" />
         <h2 style="text-align:center">Bảng điểm</h2>
         <br />
-        <div class="row">
-            <div class="col-md-1"></div>
+        <div class="row" style="height:auto">
+            <div class="col-md-4"></div>
             <div class="col-md-2">Nhập học kỳ:</div>
-            <select class="form-control" >
-                @*@foreach (var sem in data)
-                {*@
+            <div class="col-md-2">
+                <select class="form-control">
+                    @*@foreach (var sem in data)
+                        {*@
                     <option value="@*@sem.IDHK*@">Test</option>
-                @*}*@
-            </select>
-            <div />
+                    @*}*@
+                </select>
+            </div>
         </div>
-        <hr />
+        <br />
+        <div class="row" style="text-align:center">
+            <input form="form-ifconfirm" type="submit" class="btn btn-default" value="Nộp dữ liệu" onclick="javascript:GetTb('Xác nhận nộp thông tin học sinh?')" />
+        </div>
+        <table></table>
     </div>
-
- </div>
+    <hr />
+</div>
 
