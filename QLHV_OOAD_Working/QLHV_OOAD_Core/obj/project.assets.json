@@ -12537,23 +12537,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\BùiđăngHuy\\.nuget\\packages\\": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Study\\Git\\OOAD_Quan_ly_hoc_vu\\QLHV_OOAD_Working\\QLHV_OOAD_Core\\QLHV_OOAD_Core.csproj",
+      "projectUniqueName": "E:\\Git\\OOAD_Quan_ly_hoc_vu\\QLHV_OOAD_Working\\QLHV_OOAD_Core\\QLHV_OOAD_Core.csproj",
       "projectName": "QLHV_OOAD_Core",
-      "projectPath": "D:\\Study\\Git\\OOAD_Quan_ly_hoc_vu\\QLHV_OOAD_Working\\QLHV_OOAD_Core\\QLHV_OOAD_Core.csproj",
-      "packagesPath": "C:\\Users\\BùiđăngHuy\\.nuget\\packages\\",
-      "outputPath": "D:\\Study\\Git\\OOAD_Quan_ly_hoc_vu\\QLHV_OOAD_Working\\QLHV_OOAD_Core\\obj\\",
+      "projectPath": "E:\\Git\\OOAD_Quan_ly_hoc_vu\\QLHV_OOAD_Working\\QLHV_OOAD_Core\\QLHV_OOAD_Core.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "E:\\Git\\OOAD_Quan_ly_hoc_vu\\QLHV_OOAD_Working\\QLHV_OOAD_Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\BùiđăngHuy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
