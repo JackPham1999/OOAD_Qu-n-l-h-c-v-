@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "Semester";
+    Layout = "~/Views/_GeneralLayout.cshtml";
+}
+
+@{
+    var data = (HocKy)ViewData["Student"];
+}
+<div class="sidenav" style="padding-top:60px">
+    <a asp-action="Semester" class="w3-bar-item w3-button">Xem điểm</a>
+    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+
+</div>
+
+<div style=" margin-left:15%; padding-top:60px">
+    <div style="background-color:white; padding:20px;">
+        <p style="line-height: 1.8" />
+        <h2 style="text-align:center">Bảng điểm</h2>
+        <br />
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">Nhập học kỳ:</div>
+            <select class="form-control" >
+                @*@foreach (var sem in data)
+                {*@
+                    <option value="@*@sem.IDHK*@">Test</option>
+                @*}*@
+            </select>
+            <div />
+        </div>
+        <hr />
+    </div>
+
+ </div>
+

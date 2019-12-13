@@ -62,7 +62,7 @@ namespace QLHV_OOAD_Core.Controllers
 
             if(checkID(user.ID) == true)
             {
-                cmd.CommandText = "Select *from HocSinh where HoTen = '" + user.HoTen + "' and IDHS = '" + user.ID + "'";
+                cmd.CommandText = "Select *from HocSinh where HoTen = N'" + user.HoTen + "' and IDHS = N'" + user.ID + "'";
                 dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
@@ -80,7 +80,7 @@ namespace QLHV_OOAD_Core.Controllers
             {
                 if(user.ID.Substring(0,GV_Char.Length) == GV_Char)
                 {
-                    cmd.CommandText = "Select *from GiaoVien where HoTen = '" + user.HoTen + "' and IDGV = '" + user.ID + "'";
+                    cmd.CommandText = "Select *from GiaoVien where HoTen = N'" + user.HoTen + "' and IDGV = N'" + user.ID + "'";
                     dr = cmd.ExecuteReader();
                     if (dr.Read())
                     {

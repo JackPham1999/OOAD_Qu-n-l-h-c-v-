@@ -54,7 +54,7 @@ namespace QLHV_OOAD_Core.Controllers
             con.Close();
 
 
-            //Lấy dữ liệu QuanHe
+            //Lấy dữ liệu QuanHe, Phu Huynh
             con.Open();
             cmd.Connection = con;
             int count = 0;
@@ -90,7 +90,10 @@ namespace QLHV_OOAD_Core.Controllers
                 }
                 catch(Exception e)
                 {
+                    ph.NgheNghiep = null;
+                    ph.SDT = null;
                     ph.HoTen = null;
+
                 }
 
                 phList.Add(ph);
@@ -106,8 +109,21 @@ namespace QLHV_OOAD_Core.Controllers
             return View();
         }
 
-        public IActionResult Semester()
+        public IActionResult Semester(Users user)
         {
+            if (HttpContext.Session.GetString("SessionUser") == null) return RedirectToAction("ValidateForm", "Validation");
+            SqlDataReader dr = null;
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = configuration.GetConnectionString("QLHVContext");
+
+
+            con.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+
+            cmd.CommandText = "Select *from HocSinh where IDHS = '" + user.ID + "'";
+            dr = cmd.ExecuteReader();
+
             return View();
         }
     }
