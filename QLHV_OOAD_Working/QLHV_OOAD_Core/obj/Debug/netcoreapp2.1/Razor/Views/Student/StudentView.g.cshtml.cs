@@ -75,7 +75,7 @@ using QLHV_OOAD_Core.Models;
             WriteLiteral("\r\n\r\n<div class=\"sidenav\" style=\"padding-top:60px\">\r\n    ");
             EndContext();
             BeginContext(267, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "df430da201e748008cb0cf8f9a7a0e87", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "902941234d34425c8b0bfcde5c3080ff", async() => {
                 BeginContext(322, 8, true);
                 WriteLiteral("Xem điểm");
                 EndContext();

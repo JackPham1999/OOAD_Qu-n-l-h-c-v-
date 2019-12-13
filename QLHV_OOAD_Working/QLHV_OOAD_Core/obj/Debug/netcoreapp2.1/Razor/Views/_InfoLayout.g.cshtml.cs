@@ -59,7 +59,7 @@ using QLHV_OOAD_Core.Models;
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(27, 1121, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "311a5747f84445bc99c4e69a19692017", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c8a4e5aa3815405b932464cd3cbe611b", async() => {
                 BeginContext(33, 1030, true);
                 WriteLiteral(@"
     <meta name=""viewport"" content=""width=device-width"" />
@@ -78,7 +78,7 @@ using QLHV_OOAD_Core.Models;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(1063, 76, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b727681956fb4eae86005e65d40798ab", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "98bdd887a1ac4311b736f90b077bc235", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -114,7 +114,7 @@ using QLHV_OOAD_Core.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(1150, 61, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "192f9c4a5e634770a15dd5d067f91b9c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e5d3cb9abfc4a25a15aed01484fbf43", async() => {
                 BeginContext(1156, 21, true);
                 WriteLiteral("\r\n    <div>\r\n        ");
                 EndContext();
