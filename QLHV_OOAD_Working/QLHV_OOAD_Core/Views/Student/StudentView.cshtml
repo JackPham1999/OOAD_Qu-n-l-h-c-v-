@@ -6,7 +6,7 @@
 
 @{
     var data = (HocSinh)ViewData["Student"];
-    List<PhuHuynh> ph = (List<PhuHuynh>)ViewData["Parent"];
+    PhuHuynh[] ph = (PhuHuynh[])ViewData["Parent"];
 }
 
 
@@ -51,19 +51,19 @@
         </div>
         <div class="row">
             <div class="col-md-2">Họ tên cha:</div>
-            <div class="col-md-2">@ph[1].HoTen</div>
-            <div class="col-md-1">SĐT:</div>
-            <div class="col-md-3">@ph[1].SDT</div>
-            <div class="col-md-2">Nghề nghiệp:</div>
-            <div class="col-md-2">@ph[1].NgheNghiep</div>
-        </div>
-        <div class="row">
-            <div class="col-md-2">Họ tên mẹ:</div>
             <div class="col-md-2">@ph[0].HoTen</div>
             <div class="col-md-1">SĐT:</div>
             <div class="col-md-3">@ph[0].SDT</div>
             <div class="col-md-2">Nghề nghiệp:</div>
             <div class="col-md-2">@ph[0].NgheNghiep</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Họ tên mẹ:</div>
+            <div class="col-md-2">@ph[1].HoTen</div>
+            <div class="col-md-1">SĐT:</div>
+            <div class="col-md-3">@ph[1].SDT</div>
+            <div class="col-md-2">Nghề nghiệp:</div>
+            <div class="col-md-2">@ph[1].NgheNghiep</div>
         </div>
         <div class="row">
             <div class="col-md-2">Họ tên người giám hộ:</div>

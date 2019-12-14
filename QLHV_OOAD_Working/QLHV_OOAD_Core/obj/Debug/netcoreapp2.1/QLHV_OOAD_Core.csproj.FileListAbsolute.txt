@@ -155,3 +155,43 @@ D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Qu
 D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.dll
 D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.pdb
 D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.csproj.CopyComplete
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\bin\Debug\netcoreapp2.1\QLHV_OOAD_Core.deps.json
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\bin\Debug\netcoreapp2.1\QLHV_OOAD_Core.runtimeconfig.json
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\bin\Debug\netcoreapp2.1\QLHV_OOAD_Core.runtimeconfig.dev.json
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\bin\Debug\netcoreapp2.1\QLHV_OOAD_Core.dll
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\bin\Debug\netcoreapp2.1\QLHV_OOAD_Core.pdb
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\bin\Debug\netcoreapp2.1\QLHV_OOAD_Core.Views.dll
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\bin\Debug\netcoreapp2.1\QLHV_OOAD_Core.Views.pdb
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.csprojAssemblyReference.cache
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.csproj.CoreCompileInputs.cache
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.RazorAssemblyInfo.cache
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.RazorAssemblyInfo.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.AssemblyInfoInputs.cache
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.AssemblyInfo.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.TagHelpers.input.cache
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.TagHelpers.output.cache
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.RazorCoreGenerate.cache
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Student\Semester.g.cshtml.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Student\StudentView.g.cshtml.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Student\Test.g.cshtml.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Validation\ValidateForm.g.cshtml.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\_GeneralLayout.g.cshtml.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\_InfoLayout.g.cshtml.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\_ValidateLayout.g.cshtml.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.RazorTargetAssemblyInfo.cache
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.RazorTargetAssemblyInfo.cs
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.Views.pdb
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.dll
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.pdb
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.csproj.CopyComplete
+E:\University\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Teacher\TeacherView.g.cshtml.cs

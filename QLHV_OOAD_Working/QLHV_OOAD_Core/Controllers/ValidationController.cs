@@ -22,12 +22,11 @@ namespace QLHV_OOAD_Core.Controllers
         public static Users userData = new Users();
 
         [NonAction]
-        public bool checkID(string id)
+        public int checkID(string id)
         {
-            int i = 0;
-            string s = id;
-            bool result = int.TryParse(s, out i);
-            return result;
+            if (id.Substring(0, 2) == "HS") return 1;
+            if (id.Substring(0, 2) == "GV") return 2;
+            return 0;
         }
 
         public ValidationController(IConfiguration config)
@@ -48,9 +47,6 @@ namespace QLHV_OOAD_Core.Controllers
 
         public IActionResult Login(Users user)
         {
-            
-                
-            if (user.HoTen == null || user.ID == null) return RedirectToAction("ValidateForm");
             SqlDataReader dr;
             SqlConnection con = new SqlConnection();
             con.ConnectionString = configuration.GetConnectionString("QLHVContext");
@@ -60,9 +56,9 @@ namespace QLHV_OOAD_Core.Controllers
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
 
-            if(checkID(user.ID) == true)
+            if(checkID(user.ID) == 1)
             {
-                cmd.CommandText = "Select *from HocSinh where HoTen = N'" + user.HoTen + "' and IDHS = '" + user.ID + "'";
+                cmd.CommandText = "Select *from HocSinh where IDHS = N'" + user.ID + "' and MatKhau = N'" + user.MatKhau + "'";
                 dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
@@ -70,6 +66,7 @@ namespace QLHV_OOAD_Core.Controllers
                     userData.HoTen = user.HoTen;
                     var session = this.HttpContext.Session.GetString("SessionUser");
                     HttpContext.Session.SetString("SessionUser", JsonConvert.SerializeObject(user));
+                    con.Close();
                     return RedirectToAction("StudentView","Student", user, session);
                     //return Content(HttpContext.Session.GetString("SessionUser"));
                 }
@@ -80,11 +77,15 @@ namespace QLHV_OOAD_Core.Controllers
             {
                 if(user.ID.Substring(0,GV_Char.Length) == GV_Char)
                 {
-                    cmd.CommandText = "Select *from GiaoVien where HoTen = N'" + user.HoTen + "' and IDGV = N'" + user.ID + "'";
+                    cmd.CommandText = "Select *from GiaoVien where IDGV = N'" + user.ID + "' and SDT = N'" + user.MatKhau + "'";
                     dr = cmd.ExecuteReader();
                     if (dr.Read())
                     {
-                        return Content(user.HoTen + " Giao Vien");
+                        userData.ID = user.ID;
+                        userData.HoTen = user.HoTen;
+                        var session = this.HttpContext.Session.GetString("SessionUser");
+                        con.Close();
+                        return RedirectToAction("TeacherView", "Teacher", user, session);
                     }
                 }
             }

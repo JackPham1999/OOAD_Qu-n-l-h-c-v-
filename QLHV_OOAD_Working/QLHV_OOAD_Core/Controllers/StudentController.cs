@@ -22,7 +22,8 @@ namespace QLHV_OOAD_Core.Controllers
         }
 
 
-        public IActionResult StudentView(Users user, HocSinh hs, List<PhuHuynh> phList)
+        public static HocSinh hsTemp;
+        public IActionResult StudentView(Users user, HocSinh hs, PhuHuynh[] phList)
         {
             if (HttpContext.Session.GetString("SessionUser") == null) return RedirectToAction("ValidateForm", "Validation");
             SqlDataReader dr = null;
@@ -35,10 +36,11 @@ namespace QLHV_OOAD_Core.Controllers
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
 
-            cmd.CommandText = "Select *from HocSinh where IDHS = '"+user.ID+"'";
+            cmd.CommandText = "Select *from HocSinh where IDHS = '" + user.ID + "'";
             dr = cmd.ExecuteReader();
-            if(dr.Read())
+            if (dr.Read())
             {
+                hs.IDHS = Convert.ToInt32(dr["ID"]);
                 hs.HoTen = dr["HoTen"].ToString();
                 hs.TenLop = dr["TenLop"].ToString();
                 hs.DCHT = dr["DCHT"].ToString();
@@ -50,19 +52,20 @@ namespace QLHV_OOAD_Core.Controllers
                 hs.NgaySinh = Convert.ToDateTime(dr["NgaySinh"]);
 
             }
-
+            hsTemp = hs;
             con.Close();
 
 
             //Lấy dữ liệu QuanHe, Phu Huynh
+            phList = new PhuHuynh[5];
             con.Open();
             cmd.Connection = con;
             int count = 0;
             cmd.CommandText = "Select [TenQuanHe],[SDT],[NgheNghiep],[HoTen] " +
-                "from QuanHe Inner Join PhuHuynh on PhuHuynh.IDPH = QuanHe.IDPH " +
-                "where IDHS = '"+user.ID+"'";
+                "from QuanHe Inner Join PhuHuynh on PhuHuynh.ID = QuanHe.IDPH " +
+                "where IDHS = '" + hs.IDHS + "'";
             dr = cmd.ExecuteReader();
-            while (dr.Read() || count != 3)
+            while (dr.Read() || count < 3)
             {
                 PhuHuynh ph = new PhuHuynh();
                 try
@@ -87,16 +90,26 @@ namespace QLHV_OOAD_Core.Controllers
                         ph.NgheNghiep = dr["NgheNghiep"].ToString();
                         ph.HoTen = dr["HoTen"].ToString();
                     }
+
+                    else
+                    {
+                        ph.SDT = "Không có";
+                        ph.HoTen = "Không có";
+                        ph.NgheNghiep = "Không có";
+                    }
+
+
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
-                    ph.NgheNghiep = null;
-                    ph.SDT = null;
-                    ph.HoTen = null;
-
+                    ph.SDT = "Không có";
+                    ph.HoTen = "Không có";
+                    ph.NgheNghiep = "Không có";
+                    phList[count] = ph;
+                    count++;
                 }
 
-                phList.Add(ph);
+                phList[count] = ph;
                 count++;
             }
 
