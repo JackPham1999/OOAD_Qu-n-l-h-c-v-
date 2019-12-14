@@ -114,3 +114,44 @@ D:\Study\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netc
 D:\Study\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.dll
 D:\Study\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.pdb
 D:\Study\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.csproj.CopyComplete
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\bin\Debug\netcoreapp2.1\appsettings.json
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\bin\Debug\netcoreapp2.1\QLHV_OOAD_Core.deps.json
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\bin\Debug\netcoreapp2.1\QLHV_OOAD_Core.runtimeconfig.json
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\bin\Debug\netcoreapp2.1\QLHV_OOAD_Core.runtimeconfig.dev.json
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\bin\Debug\netcoreapp2.1\QLHV_OOAD_Core.dll
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\bin\Debug\netcoreapp2.1\QLHV_OOAD_Core.pdb
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\bin\Debug\netcoreapp2.1\QLHV_OOAD_Core.Views.dll
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\bin\Debug\netcoreapp2.1\QLHV_OOAD_Core.Views.pdb
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.csprojAssemblyReference.cache
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.RazorAssemblyInfo.cache
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.RazorAssemblyInfo.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.AssemblyInfoInputs.cache
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.AssemblyInfo.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.TagHelpers.input.cache
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.TagHelpers.output.cache
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.RazorCoreGenerate.cache
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Student\Semester.cshtml.g.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Student\StudentView.cshtml.g.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Student\Test.cshtml.g.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Validation\ValidateForm.cshtml.g.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\_GeneralLayout.cshtml.g.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\_InfoLayout.cshtml.g.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\_ValidateLayout.cshtml.g.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.RazorTargetAssemblyInfo.cache
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.RazorTargetAssemblyInfo.cs
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.Views.pdb
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.dll
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.pdb
+D:\Homework\HK5\Phát triển phần mềm hướng đối tượng\OOAD\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.csproj.CopyComplete

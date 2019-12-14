@@ -48,9 +48,14 @@ create table HocSinh
 create table HocKy
 (
 	IDHK varchar(50) NOT NULL,
-	NamHoc varchar(50),
 	TenHocKy varchar(20),
+	NamHoc varchar(50),
+	IDL int,
+	DiemTB float,
+	IDHS int,
 	constraint pk_hk primary key (IDHK),
+	constraint fk_hk_l foreign key(IDL) references Lop(ID),
+	constraint fk_hk_hs foreign key(IDHS) references HocSinh(ID),
 )
 create table KiemTra
 (
@@ -64,6 +69,8 @@ create table KiemTra
 	constraint fk_kt_mh foreign key (TenMonHoc) references MonHoc(ID),
 	constraint fk_kt_hk foreign key (IDHK) references HocKy(IDHK),
 )
+alter table KiemTra add IDHS int
+alter table kiemtra add constraint fk_kt_hs foreign key(IDHS) references HocSinh(ID)
 create table PhuHuynh
 (
 	ID int identity(1,1) not null ,
@@ -83,25 +90,7 @@ create table QuanHe
 	constraint fk_qh_ph foreign key (IDPH) references PhuHuynh(ID),
 	constraint pk_qh primary key (IDHS,IDPH),
 )
-create table BangDiem
-(
-	ID int identity(1,1) not null ,
-	IDBD AS 'BD'+right('00000'+cast(ID as varchar(5)), 5) PERSISTED,
-	IDHS int,
-	IDHK varchar(50),
-	IDMH int,
-	TenBaiKT nvarchar(100),
-	Diem float,
-	DiemTB float,
-	HanhKiem nvarchar(20),
-	SoBuoiNghi int,
-	XepLoai nvarchar(20),
-	LenLop nvarchar(10) check (LenLop in ('True','False')),
-	constraint pk_bd primary key (ID),
-	constraint fk_bd_hk foreign key (IDHK) references HocKy(IDHK),
-	constraint fk_bd_hs foreign key (IDHS) references HocSinh(ID),
-	constraint fk_bd_mh foreign key (IDMH) references MonHoc(ID),
-)
+
 ---------------------------Môn học
 insert into MonHoc(TenMonHoc) values (N'Toán')
 insert into MonHoc(TenMonHoc) values (N'Văn học')
@@ -172,15 +161,15 @@ insert into HocSinh(MatKhau,HoTen,TenLop,GioiTinh,NgaySinh,DanToc,CheDo,DCTT,DCH
 		N'Việt Nam','43434343')
 
 select* from HocKy
-insert into HocKy(IDHK,NamHoc,TenHocKy)
-	values('HK12000','2000-2001','HK1')
-insert into HocKy(IDHK,NamHoc,TenHocKy)
-	values('HK22000','2000-2001','HK2')
+insert into HocKy(IDHK,TenHocKy,NamHoc,IDL,IDHS,DiemTB)
+	values('HK12000','HK1','2000-2001',1,1,0)
+insert into HocKy(IDHK,NamHoc,TenHocKy,IDL,IDHS,DiemTB)
+	values('HK22000','HK2','2000-2001',2,2,0)
 
-insert into KiemTra(IDKT,IDHK,TenMonHoc,HinhThuc,NgayKT,Diem)
-	values('KT001','HK12000',1,N'15 phút','1/1/2000',9.5)
-insert into KiemTra(IDKT,IDHK,TenMonHoc,HinhThuc,NgayKT,Diem)
-	values('KT002','HK12000',1,N'90 phút','1/1/2000',9.5)
+insert into KiemTra(IDKT,IDHK,IDHS,TenMonHoc,HinhThuc,NgayKT,Diem)
+	values('KT001','HK12000',1,1,N'15 phút','1/1/2000',9.5)
+insert into KiemTra(IDKT,IDHK,IDHS,TenMonHoc,HinhThuc,NgayKT,Diem)
+	values('KT002','HK12000',1,1,N'90 phút','1/1/2000',9.5)
 
 ---delete from PhuHuynh
 ---DBCC CHECKIDENT ('[PhuHuynh]', RESEED, 0);
@@ -195,23 +184,15 @@ insert into PhuHuynh(HoTen,GioiTinh,NgheNghiep,SDT)
 
 ---delete from QuanHe
 insert into QuanHe(TenQuanHe,IDHS,IDPH)
-	values(N'Father',1,1)
+	values(N'Father','HS00001','PH000001')
 insert into QuanHe(TenQuanHe,IDHS,IDPH)
-	values(N'Father',2,2)
+	values(N'Father','HS00002','PH000002')
 insert into QuanHe(TenQuanHe,IDHS,IDPH)
-	values(N'Brother',3,3)
+	values(N'Brother','HS00003','PH000003')
 insert into QuanHe(TenQuanHe,IDHS,IDPH)
-	values(N'Mother',4,4)
+	values(N'Mother','HS00004','PH000004')
 select*from QuanHe
 select*from PhuHuynh
 select*from HocSinh
-
-insert into BangDiem(IDHS,IDHK,IDMH,TenBaiKT,Diem)
-	values(1,'HK12000',1,'KT001',9)
-insert into BangDiem(IDHS,IDHK,IDMH,TenBaiKT,Diem)
-	values(2,'HK12000',1,'KT001',9)
-insert into BangDiem(IDHS,IDHK,IDMH,TenBaiKT,Diem)
-	values(3,'HK12000',1,'KT001',9)
-insert into BangDiem(IDHS,IDHK,IDMH,TenBaiKT,Diem)
-	values(4,'HK12000',1,'KT001',9)
-select*from BangDiem
+select*from KiemTra
+alter table KiemTra alter column NgayKT date
