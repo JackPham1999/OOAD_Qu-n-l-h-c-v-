@@ -161,11 +161,13 @@ insert into HocSinh(MatKhau,HoTen,TenLop,GioiTinh,NgaySinh,DanToc,CheDo,DCTT,DCH
 		N'Việt Nam','43434343')
 
 select* from HocKy
+--delete from KiemTra
+--delete from HocKy
 insert into HocKy(IDHK,TenHocKy,NamHoc,IDL,IDHS,DiemTB)
 	values('HK12000','HK1','2000-2001',1,1,0)
-insert into HocKy(IDHK,NamHoc,TenHocKy,IDL,IDHS,DiemTB)
+insert into HocKy(IDHK,TenHocKy,NamHoc,IDL,IDHS,DiemTB)
 	values('HK22000','HK2','2000-2001',2,2,0)
-
+select*from KiemTra
 insert into KiemTra(IDKT,IDHK,IDHS,TenMonHoc,HinhThuc,NgayKT,Diem)
 	values('KT001','HK12000',1,1,N'15 phút','1/1/2000',9.5)
 insert into KiemTra(IDKT,IDHK,IDHS,TenMonHoc,HinhThuc,NgayKT,Diem)
