@@ -5,17 +5,20 @@
 }
 
 @{
-    var hocky = (HocKy)ViewData["Student"]; 
+    var hocky = (HocKy)ViewData["Student"];
 }
 <script language="javascirpt" type="text/javascript">
-    function GetTb(_stateId) {
-        var procemessage = "<option value='0'> Please wait...</option>";
-        $("#select-dist-1").html(procemessage).show();
-        var url = "@Url.Action("GetDistById")";
+    function GetTb(_hkid) {
+        var procemessage = "<tr>";
+        procemessage += "<td>69</td>"
+        procemessage += "<td>ai</td>"
+        procemessage += "</tr>";
+        $("#mytable tbody").html(procemessage).show();
+        @*var url = "@Url.Action("GetDistById")";
 
         $.ajax({
             url: url,
-            data: { id: _stateId },
+            data: { id: _hkid },
             cache: false,
             type: "POST",
             success: function (data) {
@@ -23,12 +26,12 @@
                 for (var x = 0; x < data.length; x++) {
                     markup += "<option value=" + data[x].value + ">" + data[x].text + "</option>";
                 }
-                $("#select-dist-1").html(markup).show();
+                $("#table").html(markup).show();
             },
             error: function (reponse) {
                 alert("error : " + reponse);
             }
-        });
+        });*@
     }
 </script>
 <div class="sidenav" style="padding-top:60px">
@@ -46,20 +49,17 @@
             <div class="col-md-4"></div>
             <div class="col-md-2">Nhập học kỳ:</div>
             <div class="col-md-2">
-                <select class="form-control">
+                <select class="form-control" id="select_hk" onchange="javascript:GetTb(this.value)">
                     @*@foreach (var sem in data)
                         {*@
-                    <option value="@*@sem.IDHK*@">Test</option>
+                    <option value="1">Test</option>
+                    <option value="2">AA</option>
                     @*}*@
                 </select>
             </div>
         </div>
         <br />
-        <div class="row" style="text-align:center">
-            <input form="form-ifconfirm" type="submit" class="btn btn-default" value="Nộp dữ liệu" onclick="javascript:GetTb" />
-        </div>
-        <br />
-        <table style="width:100%" class='table table-bordered table-condensed table-hover'>
+        <table style="width:100%" id="mytable" class='table table-bordered table-condensed table-hover'>
             <thead>
                 <tr>
                     <th width="10%" rowspan="2">Môn học</th>
@@ -76,13 +76,9 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Toán</td>
-                    <td>9</td>
-                    <td>9</td>
-                    <td>9</td>
+                <tr id="table-row">
+                    <td>Kỳ vậy ta</td>
                 </tr>
-
             </tbody>
         </table>
     </div>
