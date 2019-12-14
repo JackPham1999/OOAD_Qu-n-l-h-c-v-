@@ -5,35 +5,20 @@
 }
 
 @{
-    var hocky = (HocKy)ViewData["Student"];
+    List<string> hocky = (List<string>)ViewData["HocKy"];
+    string[,] Diem_1 = (string[,])ViewData["Diem_1"];
+    string[,] Diem_2 = (string[,])ViewData["Diem_2"];
 }
-<script language="javascirpt" type="text/javascript">
+@*<script language="javascirpt" type="text/javascript">
     function GetTb(_hkid) {
+ 
         var procemessage = "<tr>";
-        procemessage += "<td>69</td>"
+        procemessage += "<td>'" + _hkid + "'</td>"
         procemessage += "<td>ai</td>"
         procemessage += "</tr>";
         $("#mytable tbody").html(procemessage).show();
-        @*var url = "@Url.Action("GetDistById")";
-
-        $.ajax({
-            url: url,
-            data: { id: _hkid },
-            cache: false,
-            type: "POST",
-            success: function (data) {
-                var markup = "<option>Chọn quận/huyện</option>";
-                for (var x = 0; x < data.length; x++) {
-                    markup += "<option value=" + data[x].value + ">" + data[x].text + "</option>";
-                }
-                $("#table").html(markup).show();
-            },
-            error: function (reponse) {
-                alert("error : " + reponse);
-            }
-        });*@
     }
-</script>
+</script>*@
 <div class="sidenav" style="padding-top:60px">
     <a asp-action="Semester" class="w3-bar-item w3-button">Xem điểm</a>
     <a href="#" class="w3-bar-item w3-button">Link 2</a>
@@ -49,13 +34,17 @@
             <div class="col-md-4"></div>
             <div class="col-md-2">Nhập học kỳ:</div>
             <div class="col-md-2">
-                <select class="form-control" id="select_hk" onchange="javascript:GetTb(this.value)">
-                    @*@foreach (var sem in data)
-                        {*@
-                    <option value="1">Test</option>
-                    <option value="2">AA</option>
-                    @*}*@
+                <form action="GetDiem" method="post">
+                <select class="form-control" id="select_hk" @*onchange="javascript:GetTb(this.value)" *@ name="Year" onchange="this.form.submit()" >
+                    <option value="" selected disabled hidden>Chọn</option>
+                    @{
+                        foreach (var hk in hocky)
+                        {
+                            <option value=@hk>@hk</option>
+                        }
+                    }
                 </select>
+                </form>
             </div>
         </div>
         <br />
@@ -76,9 +65,99 @@
                 </tr>
             </thead>
             <tbody>
+                @if (ViewData["Diem_1"] != null)
+                {
                 <tr id="table-row">
-                    <td>Kỳ vậy ta</td>
+                    <td>Toán</td>
+                    <td>@Diem_1[0, 0]</td>
+                    <td>@Diem_1[0, 1]</td>
+                    <td>@Diem_1[0, 2]</td>
+                    <td>@Diem_2[0, 0]</td>
+                    <td>@Diem_2[0, 1]</td>
+                    <td>@Diem_2[0, 2]</td>
                 </tr>
+
+                <tr id="table-row">
+                    <td>Văn Học</td>
+                    <td>@Diem_1[1, 0]</td>
+                    <td>@Diem_1[1, 1]</td>
+                    <td>@Diem_1[1, 2]</td>
+                    <td>@Diem_2[1, 0]</td>
+                    <td>@Diem_2[1, 1]</td>
+                    <td>@Diem_2[1, 2]</td>
+                </tr>
+
+                <tr id="table-row">
+                    <td>Anh Văn</td>
+                    <td>@Diem_1[2, 0]</td>
+                    <td>@Diem_1[2, 1]</td>
+                    <td>@Diem_1[2, 2]</td>
+                    <td>@Diem_2[2, 0]</td>
+                    <td>@Diem_2[2, 1]</td>
+                    <td>@Diem_2[2, 2]</td>
+                </tr>
+
+                <tr id="table-row">
+                    <td>Sinh Học</td>
+                    <td>@Diem_1[3, 0]</td>
+                    <td>@Diem_1[3, 1]</td>
+                    <td>@Diem_1[3, 2]</td>
+                    <td>@Diem_2[3, 0]</td>
+                    <td>@Diem_2[3, 1]</td>
+                    <td>@Diem_2[3, 2]</td>
+                </tr>
+
+                <tr id="table-row">
+                    <td>Vật Lý</td>
+                    <td>@Diem_1[4, 0]</td>
+                    <td>@Diem_1[4, 1]</td>
+                    <td>@Diem_1[4, 2]</td>
+                    <td>@Diem_2[4, 0]</td>
+                    <td>@Diem_2[4, 1]</td>
+                    <td>@Diem_2[4, 2]</td>
+                </tr>
+
+                <tr id="table-row">
+                    <td>Hóa Học</td>
+                    <td>@Diem_1[5, 0]</td>
+                    <td>@Diem_1[5, 1]</td>
+                    <td>@Diem_1[5, 2]</td>
+                    <td>@Diem_2[5, 0]</td>
+                    <td>@Diem_2[5, 1]</td>
+                    <td>@Diem_2[5, 2]</td>
+                </tr>
+
+                <tr id="table-row">
+                    <td>Lịch Sử</td>
+                    <td>@Diem_1[6, 0]</td>
+                    <td>@Diem_1[6, 1]</td>
+                    <td>@Diem_1[6, 2]</td>
+                    <td>@Diem_2[6, 0]</td>
+                    <td>@Diem_2[6, 1]</td>
+                    <td>@Diem_2[6, 2]</td>
+                </tr>
+
+                <tr id="table-row">
+                    <td>Địa Lý</td>
+                    <td>@Diem_1[7, 0]</td>
+                    <td>@Diem_1[7, 1]</td>
+                    <td>@Diem_1[7, 2]</td>
+                    <td>@Diem_2[7, 0]</td>
+                    <td>@Diem_2[7, 1]</td>
+                    <td>@Diem_2[7, 2]</td>
+                </tr>
+
+                <tr id="table-row">
+                    <td>Giáo dục công dân</td>
+                    <td>@Diem_1[8, 0]</td>
+                    <td>@Diem_1[8, 1]</td>
+                    <td>@Diem_1[8, 2]</td>
+                    <td>@Diem_2[8, 0]</td>
+                    <td>@Diem_2[8, 1]</td>
+                    <td>@Diem_2[8, 2]</td>
+                </tr>
+                }
+
             </tbody>
         </table>
     </div>
