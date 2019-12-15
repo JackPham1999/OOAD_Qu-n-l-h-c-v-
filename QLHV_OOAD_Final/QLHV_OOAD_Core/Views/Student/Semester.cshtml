@@ -1,0 +1,165 @@
+﻿
+@{
+    ViewData["Title"] = "Semester";
+    Layout = "~/Views/_GeneralLayout.cshtml";
+}
+
+@{
+    List<string> hocky = (List<string>)ViewData["HocKy"];
+    string[,] Diem_1 = (string[,])ViewData["Diem_1"];
+    string[,] Diem_2 = (string[,])ViewData["Diem_2"];
+}
+@*<script language="javascirpt" type="text/javascript">
+    function GetTb(_hkid) {
+ 
+        var procemessage = "<tr>";
+        procemessage += "<td>'" + _hkid + "'</td>"
+        procemessage += "<td>ai</td>"
+        procemessage += "</tr>";
+        $("#mytable tbody").html(procemessage).show();
+    }
+</script>*@
+<div class="sidenav" style="padding-top:60px">
+    <a asp-controller="Student" asp-action="PostbackData" class="w3-bar-item w3-button">Thông tin</a>
+    <a asp-controller="Student" asp-action="Semester" class="w3-bar-item w3-button">Xem điểm</a>
+</div>
+
+<div style=" margin-left:15%; padding-top:60px">
+    <div style="background-color:white; padding:20px;">
+        <p style="line-height: 1.8" />
+        <h2 style="text-align:center">Bảng điểm</h2>
+        <br />
+        <div class="row" style="height:auto">
+            <div class="col-md-4"></div>
+            <div class="col-md-2">Nhập học kỳ:</div>
+            <div class="col-md-2">
+                <form action="GetDiem" method="post">
+                <select class="form-control" id="select_hk" @*onchange="javascript:GetTb(this.value)" *@ name="Year" onchange="this.form.submit()" >
+                    <option value="" selected disabled hidden>Chọn</option>
+                    @{
+                        foreach (var hk in hocky)
+                        {
+                            <option value=@hk> @hk-@(Convert.ToInt32(hk)+1) </option>
+                        }
+                    }
+                </select>
+                </form>
+            </div>
+        </div>
+        <br />
+        <table style="width:100%" id="mytable" class='table table-bordered table-condensed table-hover'>
+            <thead>
+                <tr>
+                    <th width="10%" rowspan="2">Môn học</th>
+                    <th width="45%" colspan="3">Học kỳ I</th>
+                    <th width="45%" colspan="3">Học kỳ II</th>
+                </tr>
+                <tr>
+                    <th>Miệng</th>
+                    <th>GK</th>
+                    <th>CK</th>
+                    <th>Miệng</th>
+                    <th>GK</th>
+                    <th>CK</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (ViewData["Diem_1"] != null)
+                {
+                <tr id="table-row">
+                    <td>Toán</td>
+                    <td>@Diem_1[0, 0]</td>
+                    <td>@Diem_1[0, 1]</td>
+                    <td>@Diem_1[0, 2]</td>
+                    <td>@Diem_2[0, 0]</td>
+                    <td>@Diem_2[0, 1]</td>
+                    <td>@Diem_2[0, 2]</td>
+                </tr>
+
+                <tr id="table-row">
+                    <td>Văn Học</td>
+                    <td>@Diem_1[1, 0]</td>
+                    <td>@Diem_1[1, 1]</td>
+                    <td>@Diem_1[1, 2]</td>
+                    <td>@Diem_2[1, 0]</td>
+                    <td>@Diem_2[1, 1]</td>
+                    <td>@Diem_2[1, 2]</td>
+                </tr>
+
+                <tr id="table-row">
+                    <td>Anh Văn</td>
+                    <td>@Diem_1[2, 0]</td>
+                    <td>@Diem_1[2, 1]</td>
+                    <td>@Diem_1[2, 2]</td>
+                    <td>@Diem_2[2, 0]</td>
+                    <td>@Diem_2[2, 1]</td>
+                    <td>@Diem_2[2, 2]</td>
+                </tr>
+
+                <tr id="table-row">
+                    <td>Sinh Học</td>
+                    <td>@Diem_1[3, 0]</td>
+                    <td>@Diem_1[3, 1]</td>
+                    <td>@Diem_1[3, 2]</td>
+                    <td>@Diem_2[3, 0]</td>
+                    <td>@Diem_2[3, 1]</td>
+                    <td>@Diem_2[3, 2]</td>
+                </tr>
+
+                <tr id="table-row">
+                    <td>Vật Lý</td>
+                    <td>@Diem_1[4, 0]</td>
+                    <td>@Diem_1[4, 1]</td>
+                    <td>@Diem_1[4, 2]</td>
+                    <td>@Diem_2[4, 0]</td>
+                    <td>@Diem_2[4, 1]</td>
+                    <td>@Diem_2[4, 2]</td>
+                </tr>
+
+                <tr id="table-row">
+                    <td>Hóa Học</td>
+                    <td>@Diem_1[5, 0]</td>
+                    <td>@Diem_1[5, 1]</td>
+                    <td>@Diem_1[5, 2]</td>
+                    <td>@Diem_2[5, 0]</td>
+                    <td>@Diem_2[5, 1]</td>
+                    <td>@Diem_2[5, 2]</td>
+                </tr>
+
+                <tr id="table-row">
+                    <td>Lịch Sử</td>
+                    <td>@Diem_1[6, 0]</td>
+                    <td>@Diem_1[6, 1]</td>
+                    <td>@Diem_1[6, 2]</td>
+                    <td>@Diem_2[6, 0]</td>
+                    <td>@Diem_2[6, 1]</td>
+                    <td>@Diem_2[6, 2]</td>
+                </tr>
+
+                <tr id="table-row">
+                    <td>Địa Lý</td>
+                    <td>@Diem_1[7, 0]</td>
+                    <td>@Diem_1[7, 1]</td>
+                    <td>@Diem_1[7, 2]</td>
+                    <td>@Diem_2[7, 0]</td>
+                    <td>@Diem_2[7, 1]</td>
+                    <td>@Diem_2[7, 2]</td>
+                </tr>
+
+                <tr id="table-row">
+                    <td>Giáo dục công dân</td>
+                    <td>@Diem_1[8, 0]</td>
+                    <td>@Diem_1[8, 1]</td>
+                    <td>@Diem_1[8, 2]</td>
+                    <td>@Diem_2[8, 0]</td>
+                    <td>@Diem_2[8, 1]</td>
+                    <td>@Diem_2[8, 2]</td>
+                </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+    <hr />
+</div>
+

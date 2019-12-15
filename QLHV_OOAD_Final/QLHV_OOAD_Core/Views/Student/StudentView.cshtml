@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewData["Title"] = "StudentView";
+    Layout = "~/Views/_GeneralLayout.cshtml";
+}
+
+@{
+    var data = (HocSinh)ViewData["Student"];
+    PhuHuynh[] ph = (PhuHuynh[])ViewData["Parent"];
+    var lop = (string)ViewData["Class"];
+}
+
+
+<div class="sidenav" style="padding-top:60px">
+    <a asp-controller="Student" asp-action="PostbackData" class="w3-bar-item w3-button">Thông tin</a>
+    <a asp-controller="Student" asp-action="Semester" class="w3-bar-item w3-button">Xem điểm</a>
+</div>
+
+<div style=" margin-left:15%; padding-top:60px">
+    <div style="background-color:white; padding:20px;">
+        <p style="line-height: 1.8"/>
+        <h2 style="text-align:center">Thông tin học sinh</h2>
+        <br />
+        <div class="row">
+            <div class="col-md-2">Họ tên:</div>
+            <div class="col-md-2">@data.HoTen</div>
+            <div class="col-md-2">Lớp:</div>
+            <div class="col-md-2">@lop</div>
+            <div class="col-md-2">Giới tính:</div>
+            <div class="col-md-2">@data.GioiTinh</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Ngày sinh:</div>
+            <div class="col-md-4">@data.NgaySinh.Date.ToString("dd/MM/yyyy")</div>
+            <div class="col-md-2">Dân tộc:</div>
+            <div class="col-md-4">@data.DanToc</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Số điện thoại:</div>
+            <div class="col-md-4">@data.SDT</div>
+            <div class="col-md-2">Chế độ:</div>
+            <div class="col-md-4">@data.CheDo</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Địa chỉ thường trú:</div>
+            <div class="col-md-10">@data.DCTT</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Địa chỉ hiện tại:</div>
+            <div class="col-md-10">@data.DCHT</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Họ tên cha:</div>
+            <div class="col-md-2">@ph[0].HoTen</div>
+            <div class="col-md-1">SĐT:</div>
+            <div class="col-md-3">@ph[0].SDT</div>
+            <div class="col-md-2">Nghề nghiệp:</div>
+            <div class="col-md-2">@ph[0].NgheNghiep</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Họ tên mẹ:</div>
+            <div class="col-md-2">@ph[1].HoTen</div>
+            <div class="col-md-1">SĐT:</div>
+            <div class="col-md-3">@ph[1].SDT</div>
+            <div class="col-md-2">Nghề nghiệp:</div>
+            <div class="col-md-2">@ph[1].NgheNghiep</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Họ tên người giám hộ:</div>
+            <div class="col-md-2">@ph[2].HoTen</div>
+            <div class="col-md-1">SĐT:</div>
+            <div class="col-md-3">@ph[2].SDT</div>
+            <div class="col-md-2">Nghề nghiệp:</div>
+            <div class="col-md-2">@ph[2].NgheNghiep</div>
+        </div>
+    </div>
+    <hr/>
+</div>
+

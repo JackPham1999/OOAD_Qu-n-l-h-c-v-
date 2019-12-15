@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewData["Title"] = "ScoreAdd";
+    Layout = "~/Views/_GeneralLayout.cshtml";
+}
+
+
+@{
+    var data = (GiaoVien)ViewData["Teacher"];
+    List<string> hocky = (List<string>)ViewData["HocKy"];
+    List<HocSinh> hs = (List<HocSinh>)ViewData["Student"];
+}
+
+
+<div class="sidenav" style="padding-top:60px">
+    <a asp-action="TeacherView" class="w3-bar-item w3-button">Thông tin</a>
+    <a asp-action="ScoreAdd" class="w3-bar-item w3-button">Thêm điểm</a>
+    <a asp-action="ScoreEdit" class="w3-bar-item w3-button">Sửa điểm</a>
+</div>
+
+<div style=" margin-left:15%; padding-top:60px">
+    <div style="background-color:white; padding:20px;">
+        <p style="line-height: 1.8" />
+        <h2 style="text-align:center">Sửa điểm</h2>
+        <div class="row" style="height:auto">
+            <div class="col-md-4"></div>
+            <div class="col-md-2">Nhập học sinh cần sửa điểm:</div>
+            <div class="col-md-2">
+                <form action="GetScoreEdit" method="post" class="signin-form">
+                    <select class="form-control" id="select_hk" name="Ten">
+                        <option value="" selected disabled hidden name="Ten">Chọn</option>
+                        @foreach (var hocsinh in hs)
+                        {
+                            <option value="@hocsinh.HoTen">@hocsinh.HoTen-@hocsinh.TenLop</option>
+                        }
+                    </select>
+
+
+                    <div>
+                        <select class="form-control" id="select_nam" name="HinhThuc">
+                            <option value="" selected disabled hidden name="HinhThuc">Hình Thức</option>
+                            <option value="Miệng">Miệng</option>
+                            <option value="GK">Giữa Kỳ</option>
+                            <option value="CK">Cuối Kỳ</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <select class="form-control" id="select_hk" name="HK">
+                            <option value="" selected disabled hidden name="HK">Học Kỳ</option>
+                            @foreach (var hk in hocky)
+                            {
+                                <option value="@hk">@hk</option>
+                            }
+                        </select>
+                    </div>
+
+
+                    <div class="forms-gds">
+                        <div class="form-input">
+                            <input type="text" name="Diem" placeholder="Điểm" required />
+                        </div>
+                    </div>
+
+                    <div class="forms-gds">
+                        <div class="form-input"><button class="btn">Xác Nhận</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr />
+    </div>
+</div>
+
+@if (TempData["Edit"] != null)
+{
+    @if (TempData["Edit"] == "Fail")
+    {
+        <script type="text/javascript">
+            window.onload = function () {
+                alert("Không thành công không có thông tin để sửa");
+            };
+        </script>
+    }
+
+    else
+    {
+        <script type="text/javascript">
+            window.onload = function () {
+                alert("Sửa Điểm thành công");
+            };
+        </script>
+    }
+
+}
