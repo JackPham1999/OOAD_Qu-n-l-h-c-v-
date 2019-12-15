@@ -82,7 +82,7 @@ using QLHV_OOAD_Core.Models;
             WriteLiteral("<div class=\"sidenav\" style=\"padding-top:60px\">\r\n    ");
             EndContext();
             BeginContext(649, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b6771f9cc09e44d180c279aed4823d7e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9dfcaf5814b447498f4584b8e1760880", async() => {
                 BeginContext(704, 8, true);
                 WriteLiteral("Xem điểm");
                 EndContext();
@@ -119,12 +119,12 @@ using QLHV_OOAD_Core.Models;
                 ");
             EndContext();
             BeginContext(1200, 528, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f29cb0cce55e4ea68d6cacd87f02c74e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "790d1bf2d950404f9b99144a0b7407ea", async() => {
                 BeginContext(1237, 172, true);
                 WriteLiteral("\r\n                <select class=\"form-control\" id=\"select_hk\" @*onchange=\"javascript:GetTb(this.value)\" *@ name=\"Year\" onchange=\"this.form.submit()\" >\r\n                    ");
                 EndContext();
                 BeginContext(1409, 55, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bdfde9dc1d0d4269b2b2d5d834508353", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "58a646615387451fb702fab8a55cfe65", async() => {
                     BeginContext(1451, 4, true);
                     WriteLiteral("Chọn");
                     EndContext();
@@ -165,7 +165,7 @@ using QLHV_OOAD_Core.Models;
                 WriteLiteral("                            ");
                 EndContext();
                 BeginContext(1596, 30, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "07532146fb8d437189a46035d6b7daa3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19632e7323864c089954034c0f175187", async() => {
                     BeginContext(1615, 2, false);
 #line 43 "D:\Study\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\Views\Student\Semester.cshtml"
                                          Write(hk);

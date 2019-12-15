@@ -7,7 +7,6 @@
 
 @{
     var data = (GiaoVien)ViewData["Teacher"];
-    var something = 0;
 }
 
 
@@ -19,7 +18,7 @@
 <div style=" margin-left:15%; padding-top:60px">
     <div style="background-color:white; padding:20px;">
         <p style="line-height: 1.8" />
-        div class="row" style="height:auto">
+        <div class="row" style="height:auto">
         <div class="col-md-4"></div>
         <div class="col-md-2">Nhập học sinh cần sửa điểm:</div>
         <div class="col-md-2">
@@ -27,10 +26,6 @@
                 <select class="form-control" id="select_hk" @*onchange="javascript:GetTb(this.value)" *@ name="Year" onchange="this.form.submit()">
                     <option value="" selected disabled hidden>Chọn</option>
                     @{
-                        foreach (var hk in something)
-                        {
-                            <option value=@hk>@hk</option>
-                        }
                     }
                 </select>
             </form>
