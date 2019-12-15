@@ -1,8 +1,9 @@
 ﻿
 @{
-    ViewData["Title"] = "TeacherView";
+    ViewData["Title"] = "ScoreAdd";
     Layout = "~/Views/_GeneralLayout.cshtml";
 }
+
 
 @{
     var data = (GiaoVien)ViewData["Teacher"];
@@ -10,7 +11,6 @@
 
 
 <div class="sidenav" style="padding-top:60px">
-    <a asp-action="TeacherView" class="w3-bar-item w3-button">Thông tin giáo viên</a>
     <a asp-action="ScoreAdd" class="w3-bar-item w3-button">Thêm điểm</a>
     <a asp-action="ScoreEdit" class="w3-bar-item w3-button">Sửa điểm</a>
 </div>
@@ -18,7 +18,7 @@
 <div style=" margin-left:15%; padding-top:60px">
     <div style="background-color:white; padding:20px;">
         <p style="line-height: 1.8" />
-        <h2 style="text-align:center">Thông tin giáo viên</h2>
+        <h2 style="text-align:center">Thông tin học sinh</h2>
         <br />
         <div class="row">
             <div class="col-md-2">Họ tên:</div>
@@ -31,4 +31,3 @@
     </div>
     <hr />
 </div>
-

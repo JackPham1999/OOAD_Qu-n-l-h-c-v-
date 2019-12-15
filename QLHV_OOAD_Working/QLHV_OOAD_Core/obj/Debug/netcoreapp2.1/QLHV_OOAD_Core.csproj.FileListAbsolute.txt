@@ -234,3 +234,5 @@ E:\University\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD
 E:\University\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.dll
 E:\University\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.pdb
 E:\University\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\QLHV_OOAD_Core.csproj.CopyComplete
+D:\Study\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Teacher\TeacherView.g.cshtml.cs
+D:\Study\Git\OOAD_Quan_ly_hoc_vu\QLHV_OOAD_Working\QLHV_OOAD_Core\obj\Debug\netcoreapp2.1\Razor\Views\Teacher\ScoreAdd.g.cshtml.cs
