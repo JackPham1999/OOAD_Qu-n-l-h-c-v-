@@ -81,7 +81,7 @@ using QLHV_OOAD_Core.Models;
             WriteLiteral("\r\n\r\n<div class=\"sidenav\" style=\"padding-top:60px\">\r\n    ");
             EndContext();
             BeginContext(207, 68, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "331cd223a74040e3bed93c54aa0f17c3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc06d547c0b6414eb894320899e10801", async() => {
                 BeginContext(262, 9, true);
                 WriteLiteral("Thêm điểm");
                 EndContext();
@@ -104,7 +104,7 @@ using QLHV_OOAD_Core.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(281, 68, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "27bdf19d650f47d799ffcb0a08b98167", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6babf10bba094cab896d48699612ad64", async() => {
                 BeginContext(337, 8, true);
                 WriteLiteral("Sửa điểm");
                 EndContext();
@@ -138,12 +138,12 @@ using QLHV_OOAD_Core.Models;
             ");
             EndContext();
             BeginContext(725, 362, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "331d845f850f48a49a17f1fb3d916155", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb35695cdb0748e39e8f63c2bb24f567", async() => {
                 BeginContext(766, 171, true);
                 WriteLiteral("\r\n                <select class=\"form-control\" id=\"select_hk\" @*onchange=\"javascript:GetTb(this.value)\" *@ name=\"Year\" onchange=\"this.form.submit()\">\r\n                    ");
                 EndContext();
                 BeginContext(937, 55, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "039fee520da948c1a4bac2f3818a9710", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0e52990592dc442da0048623c0184000", async() => {
                     BeginContext(979, 4, true);
                     WriteLiteral("Chọn");
                     EndContext();

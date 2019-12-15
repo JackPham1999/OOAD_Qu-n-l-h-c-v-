@@ -76,7 +76,7 @@ using QLHV_OOAD_Core.Models;
             WriteLiteral("\r\n\r\n<div class=\"sidenav\" style=\"padding-top:60px\">\r\n    ");
             EndContext();
             BeginContext(208, 81, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6741773a4e424d83a42c5d63e924a4e7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da55cd1a495e4079b5d3dde076c6722b", async() => {
                 BeginContext(266, 19, true);
                 WriteLiteral("Thông tin giáo viên");
                 EndContext();
@@ -99,7 +99,7 @@ using QLHV_OOAD_Core.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(295, 68, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a7b478ed7f44006b69f96ecc95ddf77", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "592b7436d66345c197172bf9e1a6dc00", async() => {
                 BeginContext(350, 9, true);
                 WriteLiteral("Thêm điểm");
                 EndContext();
@@ -122,7 +122,7 @@ using QLHV_OOAD_Core.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(369, 68, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a69fb54668064467841d32fb4bdce90f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e3c3bd1dbc1a48d59b5e2d0442aa0875", async() => {
                 BeginContext(425, 8, true);
                 WriteLiteral("Sửa điểm");
                 EndContext();
