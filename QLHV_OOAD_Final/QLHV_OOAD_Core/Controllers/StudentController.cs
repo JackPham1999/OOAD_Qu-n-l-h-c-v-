@@ -150,7 +150,7 @@ namespace QLHV_OOAD_Core.Controllers
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
 
-            cmd.CommandText = "Select [IDHK] from HocKy where IDHS = '" + hsTemp.IDHS + "'";
+            cmd.CommandText = "Select [IDHK] from KiemTra where IDHS = '" + hsTemp.IDHS + "' Group By IDHK";
             dr = cmd.ExecuteReader();
             while(dr.Read())
             {
