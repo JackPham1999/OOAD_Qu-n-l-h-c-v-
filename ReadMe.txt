@@ -10,4 +10,4 @@ Demo_final : QLHV_OOAD_Final
 Để kết nối sql : thay đổi appsettings.json Server
 Chạy file SQLQuery_New trước rồi chạy file SQLQueryAddPassToGV
 
-link git :https://github.com/JackPham1999/OOAD_Quan_ly_hoc_vu/tree/Nguyen
+link git :https://github.com/JackPham1999/OOAD_Quan_ly_hoc_vu
