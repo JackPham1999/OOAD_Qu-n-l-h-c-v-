@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "TeacherView";
+    Layout = "~/Views/_GeneralLayout.cshtml";
+}
+
+@{
+    var data = (GiaoVien)ViewData["Teacher"];
+    var mon = (MonHoc)ViewData["Mon"];
+}
+
+
+<div class="sidenav" style="padding-top:60px">
+    <a asp-action="TeacherView" class="w3-bar-item w3-button">Thông tin</a>
+    <a asp-action="ScoreAdd" class="w3-bar-item w3-button">Thêm điểm</a>
+    <a asp-action="ScoreEdit" class="w3-bar-item w3-button">Sửa điểm</a>
+</div>
+
+<div style=" margin-left:15%; padding-top:60px">
+    <div style="background-color:white; padding:20px;">
+        <p style="line-height: 1.8" />
+        <h2 style="text-align:center">Thông tin giáo viên</h2>
+        <br />
+        <div class="row">
+            <div class="col-md-2">Họ tên:</div>
+            <div class="col-md-2">@data.Hoten</div>
+            <div class="col-md-2">Môn giảng dạy:</div>
+            <div class="col-md-2">@mon.TenMonHoc</div>
+            <div class="col-md-2">Số điện thoại</div>
+            <div class="col-md-2">@data.SDT</div>
+        </div>
+    </div>
+    <hr />
+</div>
+
