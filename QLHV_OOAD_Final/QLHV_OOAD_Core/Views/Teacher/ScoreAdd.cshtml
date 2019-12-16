@@ -22,11 +22,12 @@
     <div style="background-color:white; padding:20px;">
         <p style="line-height: 1.8" />
         <h2 style="text-align:center">Thêm điểm</h2>
-        <div class="row" style="height:auto">
-            <div class="col-md-4"></div>
-            <div class="col-md-2">Nhập học sinh cần thêm điểm:</div>
-            <div class="col-md-2">
-                <form action="GetScoreAdd" method="post" class="signin-form">
+        <form action="GetScoreAdd" method="post" class="signin-form">
+
+            <div class="row" style="height:auto">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">Nhập học sinh cần thêm điểm:</div>
+                <div class="col-md-3">
                     <select class="form-control" id="select_hk" name="Ten">
                         <option value="" selected disabled hidden name="Ten">Chọn</option>
                         @foreach (var hocsinh in hs)
@@ -34,8 +35,12 @@
                             <option value="@hocsinh.HoTen">@hocsinh.HoTen-@hocsinh.TenLop</option>
                         }
                     </select>
-
-
+                </div>
+            </div>
+            <div class="row" style="height:auto">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">Chọn hình thức kiểm tra:</div>
+                <div class="col-md-3">
                     <div>
                         <select class="form-control" id="select_nam" name="HinhThuc">
                             <option value="" selected disabled hidden name="HinhThuc">Hình Thức</option>
@@ -44,33 +49,40 @@
                             <option value="CK">Cuối Kỳ</option>
                         </select>
                     </div>
-
-                    <div>
-                        <select class="form-control" id="select_hk" name="HK">
-                            <option value="" selected disabled hidden name="HK">Học Kỳ</option>
-                            @foreach (var hk in hocky)
-                            {
-                                <option value="@hk">@hk</option>
-                            }
-                        </select>
-                    </div>
-
-                    <div>
-                        <input type="date" name="NgayKT">
-                    </div>
-
-                    <div class="forms-gds">
-                        <div class="form-input">
-                            <input type="text" name="Diem" placeholder="Điểm" required />
-                        </div>
-                    </div>
-
-                    <div class="forms-gds">
-                        <div class="form-input"><button class="btn">Xác Nhận</button></div>
-                    </div>
-                </form>
+                </div>
             </div>
-        </div>
+            <div class="row" style="height:auto">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">Chọn học kỳ:</div>
+                <div class="col-md-3">
+                    <select class="form-control" id="select_hk" name="HK">
+                        <option value="" selected disabled hidden name="HK">Học Kỳ</option>
+                        @foreach (var hk in hocky)
+                        {
+                            <option value="@hk">@hk</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="row" style="height:auto">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">Ngày kiểm tra:</div>
+                <div class="col-md-3">
+                    <input class="form-control" type="date" name="NgayKT">
+                </div>
+            </div>
+            <div class="row" style="height:auto">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">Điểm:</div>
+                <div class="col-md-3">
+                    <input class="form-control" type="text" name="Diem" placeholder="Điểm" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="form-input forms-gds col-md-2"><button class="btn">Xác Nhận</button></div>
+            </div>
+        </form>
         <hr />
     </div>
 </div>
