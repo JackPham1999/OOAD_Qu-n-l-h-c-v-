@@ -6,6 +6,7 @@ Cần cải thiện:
 +Tổng kết năm học
 +Cải thiện trải nghiệm người dùng
 
+Demo_final : QLHV_OOAD_Final
 Để kết nối sql : thay đổi appsettings.json Server
 Chạy file SQLQuery_New trước rồi chạy file SQLQueryAddPassToGV
 

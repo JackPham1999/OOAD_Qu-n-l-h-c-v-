@@ -169,9 +169,9 @@ insert into HocKy(IDHK,TenHocKy,NamHoc,IDL,IDHS,DiemTB)
 	values('HK22000','HK2','2000-2001',2,2,0)
 select*from KiemTra
 insert into KiemTra(IDKT,IDHK,IDHS,TenMonHoc,HinhThuc,NgayKT,Diem)
-	values('KT001','HK12000',1,1,N'15 phút','1/1/2000',9.5)
+	values('KT001','HK12000',1,1,N'Miệng','1/1/2000',9.5)
 insert into KiemTra(IDKT,IDHK,IDHS,TenMonHoc,HinhThuc,NgayKT,Diem)
-	values('KT002','HK12000',1,1,N'90 phút','1/1/2000',9.5)
+	values('KT002','HK12000',1,1,N'GK','1/1/2000',9.5)
 
 ---delete from PhuHuynh
 ---DBCC CHECKIDENT ('[PhuHuynh]', RESEED, 0);
